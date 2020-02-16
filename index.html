@@ -228,7 +228,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/16/%E7%AC%AC%E4%B8%80%E5%8D%9A%E5%AE%A2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/16/hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="周亚楠">
@@ -247,7 +247,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/02/16/%E7%AC%AC%E4%B8%80%E5%8D%9A%E5%AE%A2/" itemprop="url">第一博客</a></h1>
+                <a class="post-title-link" href="/2020/02/16/hexo/" itemprop="url">使用hexo+GithubPage搭建个人博客</a></h1>
         
 
         <div class="post-meta">
@@ -259,7 +259,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-16T20:41:56+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-16T22:51:23+08:00">
                 2020-02-16
               </time>
             
@@ -282,8 +282,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%AC%A2%E8%BF%8E%E8%AF%AD/" itemprop="url" rel="index">
-                    <span itemprop="name">欢迎语</span>
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">博客构建工具Hexo</span>
                   </a>
                 </span>
 
@@ -321,7 +321,35 @@
       
         
           
-            <h3 id="这是一个技术分享的好地方"><a href="#这是一个技术分享的好地方" class="headerlink" title="这是一个技术分享的好地方"></a><center>这是一个技术分享的好地方</center></h3>
+            <h2 id="什么是GithubPages"><a href="#什么是GithubPages" class="headerlink" title="什么是GithubPages"></a>什么是GithubPages</h2><hr>
+<ol>
+<li><code>githubPage</code>是github网站提供的静态网页存储服务，你可以建立一个github仓库，之后开启该仓库作为githubPage存在(github将该仓库的文件在文件服务器上托管，展示项目根目录下的index.html文件，并提供一个外网访问地址)</li>
+<li>使用githubPage服务，我们可以免费使用一个web静态文件服务器</li>
+</ol>
+<h2 id="什么是Hexo"><a href="#什么是Hexo" class="headerlink" title="什么是Hexo"></a>什么是Hexo</h2><hr>
+<p><code>Hexo</code>是一个基于node环境的博客构建工具，hexo提供了以下功能帮助快速搭建博客</p>
+<ol>
+<li>提供对markdown语法支持，hexo可以将markdown文件编译成html文件，让你书写文章更简单</li>
+<li>提供众多主题，让你的页面更漂亮</li>
+<li>提供文章时间线，文章分类等基础功能，让你的blog更易管理</li>
+</ol>
+<h3 id="Hexo的使用"><a href="#Hexo的使用" class="headerlink" title="Hexo的使用"></a>Hexo的使用</h3><hr>
+<ol>
+<li>安装hexo工具<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># hexo依赖于nodeJS，在使用hexo之前应该保证机器安装了node环境</span><br><span class="line"></span><br><span class="line"># 全局安装hexo命令行工具，安装完成后可以全局使用hexo命令</span><br><span class="line">npm i hexo-cli -g</span><br></pre></td></tr></table></figure></li>
+<li>使用hexo快速初始化一个博客项目<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># hexo会自动加载依赖包，提供blog的基础功能</span><br><span class="line">hexo init 博客名</span><br></pre></td></tr></table></figure></li>
+<li>开发中常用的hexo命令<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 编译项目可在web浏览器中运行的代码 html,css,js</span><br><span class="line"># 打包的web文件，会被放置在 public文件夹下</span><br><span class="line">hexo g | hexo generate</span><br><span class="line"></span><br><span class="line"># 清空构建结果，即public文件夹下的内容</span><br><span class="line">hexo clean | hexo c</span><br><span class="line"></span><br><span class="line"># 启动一个本地服务器，用于实时预览打包的结果</span><br><span class="line"># 一般会运行在 localhost:<span class="number">4000</span>上</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></li>
+<li>使用hexo将打包的静态文件部署到服务器上</li>
+</ol>
+<ul>
+<li>对于使用<code>githubPage</code>做文件托管的blog项目，hexo只需要把静态文件上传至对应的git仓库即可，因此在部署前hexo需要我们指定，静态文件关联的git仓库地址<br><img src="/images/hexo/hexo01.png" alt=""></li>
+<li>使用hexo命令自动发布静态文件<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 打包</span><br><span class="line">hexo g</span><br><span class="line"># 发布public文件夹到目标git仓库</span><br><span class="line">hexo deploy | hexo d</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="5">
+<li>图片的处理<br>post_asset_folder: true<br><img src="" alt=""></li>
+<li>开启分类<br>hexo new page categories</li>
+<li>根据模版新建文章<br>hexo new post 文章名<br>8 时间线<br>xxx</li>
+</ol>
+
           
         
       
