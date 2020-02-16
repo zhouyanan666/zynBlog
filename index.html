@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="zynBlog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -48,21 +48,21 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="zynBlog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+<link href="zynBlog/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="zynBlog/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="zynBlog/images/favicon-32x32-next.png?v=5.1.4">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="zynBlog/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="zynBlog/images/logo.svg?v=5.1.4" color="#222">
 
 
 
@@ -81,7 +81,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="周亚楠的blog">
-<meta property="og:url" content="https://zhouyanan666.github.io/zynBlog/index.html">
+<meta property="og:url" content="https://zhouyanan666.github.io/index.html">
 <meta property="og:site_name" content="周亚楠的blog">
 <meta property="article:author" content="周亚楠">
 <meta name="twitter:card" content="summary">
@@ -91,7 +91,7 @@
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: 'zynBlog/',
     scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -114,7 +114,7 @@
 
 
 
-  <link rel="canonical" href="https://zhouyanan666.github.io/zynBlog/"/>
+  <link rel="canonical" href="https://zhouyanan666.github.io/"/>
 
 
 
@@ -149,7 +149,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="zynBlog/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">周亚楠的blog</span>
         <span class="logo-line-after"><i></i></span>
@@ -177,7 +177,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+          <a href="zynBlog/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -187,7 +187,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
+          <a href="zynBlog/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -228,12 +228,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/">
+    <link itemprop="mainEntityOfPage" href="https://zhouyanan666.github.iozynBlog/2020/02/16/hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="周亚楠">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="zynBlog/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -247,7 +247,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/02/16/hexo/" itemprop="url">使用hexo+GithubPage搭建个人博客</a></h1>
+                <a class="post-title-link" href="zynBlog/2020/02/16/hexo/" itemprop="url">使用hexo+GithubPage搭建个人博客</a></h1>
         
 
         <div class="post-meta">
@@ -282,7 +282,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7Hexo/" itemprop="url" rel="index">
+                  <a href="zynBlog/categories/%E5%8D%9A%E5%AE%A2%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7Hexo/" itemprop="url" rel="index">
                     <span itemprop="name">博客构建工具Hexo</span>
                   </a>
                 </span>
@@ -342,11 +342,17 @@
 </ol>
 <ul>
 <li>对于使用<code>githubPage</code>做文件托管的blog项目，hexo只需要把静态文件上传至对应的git仓库即可，因此在部署前hexo需要我们指定，静态文件关联的git仓库地址<br><img src="/images/hexo/hexo01.png" alt=""></li>
-<li>使用hexo命令自动发布静态文件<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 打包</span><br><span class="line">hexo g</span><br><span class="line"># 提交public文件夹下的代码到目标git仓库的gh-pages分支</span><br><span class="line"># 而githubPages正好我是基于gh-pages分支，这就形成了博客的更新</span><br><span class="line">hexo deploy | hexo d</span><br></pre></td></tr></table></figure>
+<li>使用hexo命令自动发布静态文件<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 打包</span><br><span class="line">hexo g</span><br><span class="line"># hexo会将public文件夹拷贝到.deploy_git文件下，并将.deploy_git文件夹与目标git仓库的gh-pages分支做关联，执行推送</span><br><span class="line"># 而githubPages正好我是基于gh-pages分支，这就形成了博客的更新</span><br><span class="line">hexo deploy | hexo d</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<p>– 常见问题<br>5. 图片的处理<br>post_asset_folder: true<br><img src="" alt=""><br>6. 开启分类<br>hexo new page categories<br>7. 根据模版新建文章<br>hexo new post 文章名<br>8 时间线</p>
+<p>– 常见问题</p>
+<ol>
+<li>静态文件路径 /s</li>
+<li>图片的处理<br>post_asset_folder: true<br><img src="" alt=""></li>
+<li>开启分类<br>hexo new page categories</li>
+<li>根据模版新建文章<br>hexo new post 文章名<br>8 时间线</li>
+</ol>
 <p>xxx<br>xxx<br>9. 代码的处理</p>
 
           
@@ -427,7 +433,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives">
+                <a href="zynBlog/archives">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
@@ -439,7 +445,7 @@
               
               
               <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
+                <a href="zynBlog/categories/index.html">
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
@@ -556,60 +562,60 @@
 
   
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+    <script type="text/javascript" src="zynBlog/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script type="text/javascript" src="zynBlog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+    <script type="text/javascript" src="zynBlog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="zynBlog/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="zynBlog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="zynBlog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="zynBlog/js/src/utils.js?v=5.1.4"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+  <script type="text/javascript" src="zynBlog/js/src/motion.js?v=5.1.4"></script>
 
 
 
   
+  
+
+
+  <script type="text/javascript" src="zynBlog/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="zynBlog/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="zynBlog/js/src/bootstrap.js?v=5.1.4"></script>
 
 
 
