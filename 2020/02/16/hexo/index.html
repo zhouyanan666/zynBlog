@@ -85,10 +85,14 @@
 <meta property="og:url" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/index.html">
 <meta property="og:site_name" content="周亚楠的blog">
 <meta property="og:description" content="什么是GithubPage  githubPage是github网站提供的静态网页存储服务，你可以建立一个github仓库，之后开启该仓库作为githubPage存在(github将该仓库的文件在文件服务器上托管，展示项目根目录下的index.html文件，并提供一个外网访问地址) 使用githubPage服务，我们可以免费使用一个web静态文件服务器  什么是Hexo Hexo是一个基于node">
+<meta property="og:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo01.png">
+<meta property="og:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo02.png">
+<meta property="og:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo03.png">
 <meta property="article:published_time" content="2020-02-16T14:51:23.000Z">
-<meta property="article:modified_time" content="2020-02-16T17:24:42.513Z">
+<meta property="article:modified_time" content="2020-02-16T17:58:48.302Z">
 <meta property="article:author" content="周亚楠">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo01.png">
 
 
 
@@ -350,7 +354,7 @@
 <li>使用hexo将打包的静态文件部署到服务器上</li>
 </ol>
 <ul>
-<li>对于使用<code>githubPage</code>做文件托管的blog项目，hexo只需要把静态文件上传至对应的git仓库即可，因此在部署前hexo需要我们指定，静态文件关联的git仓库地址(如果hexo不提供这个命令，发布就会比较麻烦，毕竟blog的开发代码和发布是不一样的)</li>
+<li>对于使用<code>githubPage</code>做文件托管的blog项目，hexo只需要把静态文件上传至对应的git仓库即可，因此在部署前hexo需要我们指定，静态文件关联的git仓库地址(如果hexo不提供这个命令，发布就会比较麻烦，毕竟blog的开发代码和发布是不一样的)<img src="/zynBlog/2020/02/16/hexo/hexo01.png" class=""></li>
 <li>使用hexo命令自动发布静态文件<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 打包</span><br><span class="line">hexo g</span><br><span class="line"># hexo会将public文件夹拷贝到.deploy_git文件下，并将.deploy_git文件夹与目标git仓库的gh-pages分支做关联，执行推送</span><br><span class="line"># 而githubPages正好我是基于gh-pages分支，这就形成了博客的更新</span><br><span class="line">hexo deploy | hexo d</span><br></pre></td></tr></table></figure>
 
 </li>
@@ -363,13 +367,13 @@
 </ol>
 <ul>
 <li>hexo提供了<code>hexo new post 文章名</code>的方法用于新建，该命令的运行结果是基于<code>scaffolds/post.md</code>模版在<code>source/_posts</code>创建一个<code>文件名.md</code>文件</li>
-<li>文章的通用head解析见下图
-</li>
+<li>文章的通用head解析见下图<img src="/zynBlog/2020/02/16/hexo/hexo02.png" class="">
+<img src="/zynBlog/2020/02/16/hexo/hexo03.png" class=""></li>
 <li>使用<code>scaffolds/post.md</code>我们不用关心如何文件的创建时间，hexo会自动根据创建日期在<code>public/archives</code>下以日期形成文件夹</li>
 </ul>
 <ol>
 <li>静态文件路径  在sources下新建images文件夹</li>
-<li>图片的处理<br>post_asset_folder: true<br><img src="" alt=""></li>
+<li>图片的处理<br>post_asset_folder: true<br>同名文件夹<br><img src="" alt=""></li>
 <li>开启分类<br>原理和方法<br>hexo new page categories</li>
 <li>根据模版新建文章<br>hexo new post 文章名<br>8 时间线原理和开启方法<br>10 theme的安装<br>11 阅读全文<br>12 代码高亮</li>
 </ol>
