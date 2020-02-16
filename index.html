@@ -195,6 +195,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/zynBlog/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -320,20 +330,19 @@
 
       
         
-          
-            <h2 id="什么是GithubPages"><a href="#什么是GithubPages" class="headerlink" title="什么是GithubPages"></a>什么是GithubPages</h2><hr>
+          <h3 id="什么是GithubPage"><a href="#什么是GithubPage" class="headerlink" title="什么是GithubPage"></a>什么是GithubPage</h3><hr>
 <ol>
 <li><code>githubPage</code>是github网站提供的静态网页存储服务，你可以建立一个github仓库，之后开启该仓库作为githubPage存在(github将该仓库的文件在文件服务器上托管，展示项目根目录下的index.html文件，并提供一个外网访问地址)</li>
 <li>使用githubPage服务，我们可以免费使用一个web静态文件服务器</li>
 </ol>
-<h2 id="什么是Hexo"><a href="#什么是Hexo" class="headerlink" title="什么是Hexo"></a>什么是Hexo</h2><hr>
+<h3 id="什么是Hexo"><a href="#什么是Hexo" class="headerlink" title="什么是Hexo"></a>什么是Hexo</h3><hr>
 <p><code>Hexo</code>是一个基于node环境的博客构建工具，hexo提供了以下功能帮助快速搭建博客</p>
 <ol>
 <li>提供对markdown语法支持，hexo可以将markdown文件编译成html文件，让你书写文章更简单</li>
 <li>提供众多主题，让你的页面更漂亮</li>
 <li>提供文章时间线，文章分类等基础功能，让你的blog更易管理</li>
 </ol>
-<h3 id="Hexo的使用"><a href="#Hexo的使用" class="headerlink" title="Hexo的使用"></a>Hexo的使用</h3><hr>
+<h3 id="Hexo的基本使用"><a href="#Hexo的基本使用" class="headerlink" title="Hexo的基本使用"></a>Hexo的基本使用</h3><hr>
 <ol>
 <li>安装hexo工具<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># hexo依赖于nodeJS，在使用hexo之前应该保证机器安装了node环境</span><br><span class="line"></span><br><span class="line"># 全局安装hexo命令行工具，安装完成后可以全局使用hexo命令</span><br><span class="line">npm i hexo-cli -g</span><br></pre></td></tr></table></figure></li>
 <li>使用hexo快速初始化一个博客项目<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># hexo会自动加载依赖包，提供blog的基础功能</span><br><span class="line">hexo init 博客名</span><br></pre></td></tr></table></figure></li>
@@ -341,21 +350,18 @@
 <li>使用hexo将打包的静态文件部署到服务器上</li>
 </ol>
 <ul>
-<li>对于使用<code>githubPage</code>做文件托管的blog项目，hexo只需要把静态文件上传至对应的git仓库即可，因此在部署前hexo需要我们指定，静态文件关联的git仓库地址<br><img src="/images/hexo/hexo01.png" alt=""></li>
+<li>对于使用<code>githubPage</code>做文件托管的blog项目，hexo只需要把静态文件上传至对应的git仓库即可，因此在部署前hexo需要我们指定，静态文件关联的git仓库地址(如果hexo不提供这个命令，发布就会比较麻烦，毕竟blog的开发代码和发布是不一样的)<br><img src="/images/hexo/hexo01.png" alt></li>
 <li>使用hexo命令自动发布静态文件<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 打包</span><br><span class="line">hexo g</span><br><span class="line"># hexo会将public文件夹拷贝到.deploy_git文件下，并将.deploy_git文件夹与目标git仓库的gh-pages分支做关联，执行推送</span><br><span class="line"># 而githubPages正好我是基于gh-pages分支，这就形成了博客的更新</span><br><span class="line">hexo deploy | hexo d</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<p>– 常见问题</p>
-<ol>
-<li>静态文件路径 /s</li>
-<li>图片的处理<br>post_asset_folder: true<br><img src="" alt=""></li>
-<li>开启分类<br>hexo new page categories</li>
-<li>根据模版新建文章<br>hexo new post 文章名<br>8 时间线</li>
-</ol>
-<p>xxx<br>xxx<br>9. 代码的处理</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/zynBlog/2020/02/16/hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -433,7 +439,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/zynBlog/archives">
+                <a href="/zynBlog/archives/%7C%7Carchive">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
