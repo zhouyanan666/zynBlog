@@ -10,7 +10,9 @@ $(document).ready(function () {
         footerOffset = getFooterOffset(),
         sidebarHeight = $('#sidebar').height() + NexT.utils.getSidebarb2tHeight(),
         contentHeight = $('#content').height();
-
+    
+    // 隐藏分页前后按钮
+    $('.pagination .extend').hide();
     // Not affix if sidebar taller then content (to prevent bottom jumping).
     if (headerOffset + sidebarHeight < contentHeight) {
       sidebarInner.affix({
