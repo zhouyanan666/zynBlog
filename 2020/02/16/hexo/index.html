@@ -88,10 +88,11 @@
 <meta property="og:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo01.png">
 <meta property="og:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo02.png">
 <meta property="og:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo03.png">
+<meta property="og:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo06.png">
 <meta property="og:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo04.png">
 <meta property="og:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo05.png">
 <meta property="article:published_time" content="2020-02-16T14:51:23.000Z">
-<meta property="article:modified_time" content="2020-02-16T18:20:50.298Z">
+<meta property="article:modified_time" content="2020-02-17T08:15:22.371Z">
 <meta property="article:author" content="周亚楠">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://zhouyanan666.github.io/zynBlog/2020/02/16/hexo/hexo01.png">
@@ -374,6 +375,13 @@
 <li>使用<code>scaffolds/post.md</code>我们不用关心如何文件的创建时间，hexo会自动根据创建日期在<code>public/archives</code>下以日期形成文件夹</li>
 </ul>
 <ol start="2">
+<li><strong>部署后页面静态资源无法加载</strong></li>
+</ol>
+<ul>
+<li>hexo打包后静态资源都是以<code>/</code>访问，如果项目部署在’xxxx.github.io/xxx’时，需要在<code>_config.yml</code>中配置路径前缀<img src="/zynBlog/2020/02/16/hexo/hexo06.png" class="">
+</li>
+</ul>
+<ol start="3">
 <li><strong>hexo下图片文件的引用</strong></li>
 </ol>
 <ul>
@@ -381,7 +389,7 @@
 <li>在每次新建post时，在<code>_posts</code>文件夹下新建同名文件夹，存在图片(hexo规定，每个post引入的图片都需要对应在同级目录同名文件夹下)，引入的语法如下<img src="/zynBlog/2020/02/16/hexo/hexo04.png" class="">
 </li>
 </ul>
-<ol start="3">
+<ol start="4">
 <li><strong>hexo开启分类</strong></li>
 </ol>
 <ul>
